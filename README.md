@@ -35,6 +35,6 @@ North8 adalah sebuah aplikasi pintar yang dibuat untuk membantu umat manusia aga
 ```
 
 # Download
-[North8.exe](https://github.com/CusMeDroid/North8/releases/download/v1.1/North8.exe)
+[North8.exe](https://github.com/CusMeDroid/North8/releases/download/v1.2/North8.exe)
 
 Copyright © 2025 - **Suryo Dwijayanto**
