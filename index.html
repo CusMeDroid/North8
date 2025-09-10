@@ -1,239 +1,242 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>North8 - Otomasi Cerdas Bertenaga AI</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0d1117;
-            color: #f0f6fc;
-        }
-        .container {
-            max-width: 1200px;
-        }
-        .text-gradient {
-            background-image: linear-gradient(to right, #6EE7B7, #3B82F6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .animate-pulse-slow {
-            animation: pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-        }
-        @keyframes pulse-slow {
-            0%, 100% { opacity: 1; }
-            50% { opacity: .7; }
-        }
-        .fade-in {
-            animation: fadeIn 1.5s ease-in-out;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .bouncing-arrow {
-            animation: bounce 2s infinite;
-        }
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
-                transform: translateY(0);
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>North8 - Otomasi Cerdas Bertenaga AI</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <meta name="description" content="North8 adalah aplikasi pintar untuk membantu Anda menghasilkan teks dengan AI dan mengirimkannya secara terjadwal atau langsung ke berbagai platform sosial.">
+        <meta name="keywords" content="north8, north8app, iyortml, suryodwijayanto, cusmedroid">
+        <meta name="author" content="Suryo Dwijayanto">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+            body {
+                font-family: 'Inter', sans-serif;
+                background-color: #0d1117;
+                color: #f0f6fc;
             }
-            40% {
-                transform: translateY(-10px);
+            .container {
+                max-width: 1200px;
             }
-            60% {
-                transform: translateY(-5px);
+            .text-gradient {
+                background-image: linear-gradient(to right, #6EE7B7, #3B82F6);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
             }
-        }
-        /* Mobile adjustments */
-        @media (max-width: 640px) {
-            h1 {
-                font-size: 2.5rem;
+            .animate-pulse-slow {
+                animation: pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
             }
-            p {
-                font-size: 1rem;
+            @keyframes pulse-slow {
+                0%, 100% { opacity: 1; }
+                50% { opacity: .7; }
             }
-        }
-    </style>
-</head>
-<body class="overflow-x-hidden">
+            .fade-in {
+                animation: fadeIn 1.5s ease-in-out;
+            }
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+            .bouncing-arrow {
+                animation: bounce 2s infinite;
+            }
+            @keyframes bounce {
+                0%, 20%, 50%, 80%, 100% {
+                    transform: translateY(0);
+                }
+                40% {
+                    transform: translateY(-10px);
+                }
+                60% {
+                    transform: translateY(-5px);
+                }
+            }
+            /* Mobile adjustments */
+            @media (max-width: 640px) {
+                h1 {
+                    font-size: 2.5rem;
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
+        </style>
+    </head>
+    <body class="overflow-x-hidden">
 
-    <!-- Hero Section -->
-    <header class="h-screen flex flex-col items-center justify-center text-center p-4 relative">
-        <div class="absolute inset-0 z-0 opacity-20" style="background-image: url('https://placehold.co/1920x1080/0d1117/0d1117?text=');"></div>
-        <div class="relative z-10 fade-in">
-            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-4">
-                Automasi Cerdas, <br class="sm:hidden" /><span class="text-gradient">AI di Ujung Jari Anda.</span>
-            </h1>
-            <p class="text-base sm:text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-8">
-                North8 adalah aplikasi pintar untuk membantu Anda menghasilkan teks dengan AI dan mengirimkannya secara terjadwal atau langsung ke berbagai platform sosial.
-            </p>
-            <div class="space-y-4 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row justify-center">
-                <a href="https://github.com/CusMeDroid/North8/releases/download/v1.1/North8.exe" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center">
-                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11.996 11.298l-7.796-1.094.015 8.125 7.781 1.094v-8.125zm.008-2.618v-8.126l7.78 1.092-.016 8.126-7.764-1.092zm.014-8.803l-7.795 1.094.015 8.126 7.781-1.094v-8.126zm-.014 9.475v8.126l7.78-1.092.016-8.126-7.764 1.092z"/></svg>
-                    Unduh
-                </a>
-                <a href="#fitur" class="bg-transparent border border-white text-white font-semibold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg">Pelajari Lebih Lanjut</a>
-            </div>
-            <div class="mt-16 text-white text-4xl bouncing-arrow">
-                &darr;
-            </div>
-        </div>
-    </header>
-
-    <!-- Features Section -->
-    <section id="fitur" class="py-16 sm:py-24 p-4">
-        <div class="container mx-auto">
-            <div class="text-center mb-12 fade-in">
-                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Fitur Utama</h2>
-                <p class="text-gray-400 max-w-3xl mx-auto">
-                    North8 menyederhanakan alur kerja Anda dengan alat-alat cerdas dan integrasi yang mulus.
+        <!-- Hero Section -->
+        <header class="h-screen flex flex-col items-center justify-center text-center p-4 relative">
+            <div class="absolute inset-0 z-0 opacity-20" style="background-image: url('https://placehold.co/1920x1080/0d1117/0d1117?text=');"></div>
+            <div class="relative z-10 fade-in">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-4">
+                    Automasi Cerdas, <br class="sm:hidden" /><span class="text-gradient">AI di Ujung Jari Anda.</span>
+                </h1>
+                <p class="text-base sm:text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-8">
+                    North8 adalah aplikasi pintar untuk membantu Anda menghasilkan teks dengan AI dan mengirimkannya secara terjadwal atau langsung ke berbagai platform sosial.
                 </p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Fitur 1: AI Generate Text & Image -->
-                <div class="bg-gray-800 rounded-2xl p-6 transform hover:scale-105 transition duration-300 fade-in">
-                    <div class="text-blue-500 text-4xl mb-4">🤖</div>
-                    <h3 class="text-xl font-bold mb-2">Generasi Konten AI</h3>
-                    <p class="text-gray-400">
-                        Hasilkan teks dan gambar berkualitas tinggi dalam hitungan detik menggunakan <strong>Gemini API</strong> dan <strong>Stability.ai API</strong>.
-                    </p>
+                <div class="space-y-4 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row justify-center">
+                    <a href="https://github.com/CusMeDroid/North8/releases/download/v1.1/North8.exe" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11.996 11.298l-7.796-1.094.015 8.125 7.781 1.094v-8.125zm.008-2.618v-8.126l7.78 1.092-.016 8.126-7.764-1.092zm.014-8.803l-7.795 1.094.015 8.126 7.781-1.094v-8.126zm-.014 9.475v8.126l7.78-1.092.016-8.126-7.764 1.092z"/></svg>
+                        Unduh
+                    </a>
+                    <a href="#fitur" class="bg-transparent border border-white text-white font-semibold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg">Pelajari Lebih Lanjut</a>
                 </div>
-                
-                <!-- Fitur 2: Scheduled & Direct Posting -->
-                <div class="bg-gray-800 rounded-2xl p-6 transform hover:scale-105 transition duration-300 fade-in">
-                    <div class="text-green-500 text-4xl mb-4">⏰</div>
-                    <h3 class="text-xl font-bold mb-2">Penjadwalan Otomatis</h3>
-                    <p class="text-gray-400">
-                        Atur postingan untuk dikirim pada waktu yang tepat ke <strong>Telegram</strong> atau <strong>Gmail</strong> dengan fungsi penjadwalan.
-                    </p>
-                </div>
-                
-                <!-- Fitur 3: Data Conversion -->
-                <div class="bg-gray-800 rounded-2xl p-6 transform hover:scale-105 transition duration-300 fade-in">
-                    <div class="text-purple-500 text-4xl mb-4">🔄</div>
-                    <h3 class="text-xl font-bold mb-2">Konversi File</h3>
-                    <p class="text-gray-400">
-                        Ubah data JSON menjadi format lain seperti CSV, XLSX, PDF, KML, dan KMZ dengan mudah.
-                    </p>
-                </div>
-                
-                <!-- Fitur 4: Text to Speech -->
-                <div class="bg-gray-800 rounded-2xl p-6 transform hover:scale-105 transition duration-300 fade-in">
-                    <div class="text-orange-500 text-4xl mb-4">🗣️</div>
-                    <h3 class="text-xl font-bold mb-2">Teks ke Ucapan</h3>
-                    <p class="text-gray-400">
-                        Konversikan teks Anda menjadi file audio yang dapat diunduh untuk berbagai keperluan.
-                    </p>
-                </div>
-                
-                <!-- Fitur 5: Google Drive Integration -->
-                <div class="bg-gray-800 rounded-2xl p-6 transform hover:scale-105 transition duration-300 fade-in">
-                    <div class="text-yellow-500 text-4xl mb-4">☁️</div>
-                    <h3 class="text-xl font-bold mb-2">Integrasi Google Drive</h3>
-                    <p class="text-gray-400">
-                        Unggah dan kelola file secara otomatis di akun <strong>Google Drive</strong> Anda.
-                    </p>
-                </div>
-
-                <!-- Fitur 6: Direct Messaging & File Sharing -->
-                <div class="bg-gray-800 rounded-2xl p-6 transform hover:scale-105 transition duration-300 fade-in">
-                    <div class="text-pink-500 text-4xl mb-4">💬</div>
-                    <h3 class="text-xl font-bold mb-2">Kirim Langsung ke Sosial</h3>
-                    <p class="text-gray-400">
-                        Langsung kirim pesan, teks, atau file yang diolah ke <strong>Telegram</strong> dan <strong>Gmail</strong>.
-                    </p>
+                <div class="mt-16 text-white text-4xl bouncing-arrow">
+                    &darr;
                 </div>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <!-- Configuration Section -->
-    <section id="konfigurasi" class="py-16 sm:py-24 p-4 bg-gray-900">
-        <div class="container mx-auto">
-            <div class="text-center mb-12 fade-in">
-                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Konfigurasi</h2>
-                <p class="text-gray-400 max-w-3xl mx-auto">
-                    Ikuti langkah-langkah mudah ini untuk menyiapkan North8 Anda.
+        <!-- Features Section -->
+        <section id="fitur" class="py-16 sm:py-24 p-4">
+            <div class="container mx-auto">
+                <div class="text-center mb-12 fade-in">
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-4">Fitur Utama</h2>
+                    <p class="text-gray-400 max-w-3xl mx-auto">
+                        North8 menyederhanakan alur kerja Anda dengan alat-alat cerdas dan integrasi yang mulus.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Fitur 1: AI Generate Text & Image -->
+                    <div class="bg-gray-800 rounded-2xl p-6 transform hover:scale-105 transition duration-300 fade-in">
+                        <div class="text-blue-500 text-4xl mb-4">🤖</div>
+                        <h3 class="text-xl font-bold mb-2">Generasi Konten AI</h3>
+                        <p class="text-gray-400">
+                            Hasilkan teks dan gambar berkualitas tinggi dalam hitungan detik menggunakan <strong>Gemini API</strong> dan <strong>Stability.ai API</strong>.
+                        </p>
+                    </div>
+                    
+                    <!-- Fitur 2: Scheduled & Direct Posting -->
+                    <div class="bg-gray-800 rounded-2xl p-6 transform hover:scale-105 transition duration-300 fade-in">
+                        <div class="text-green-500 text-4xl mb-4">⏰</div>
+                        <h3 class="text-xl font-bold mb-2">Penjadwalan Otomatis</h3>
+                        <p class="text-gray-400">
+                            Atur postingan untuk dikirim pada waktu yang tepat ke <strong>Telegram</strong> atau <strong>Gmail</strong> dengan fungsi penjadwalan.
+                        </p>
+                    </div>
+                    
+                    <!-- Fitur 3: Data Conversion -->
+                    <div class="bg-gray-800 rounded-2xl p-6 transform hover:scale-105 transition duration-300 fade-in">
+                        <div class="text-purple-500 text-4xl mb-4">🔄</div>
+                        <h3 class="text-xl font-bold mb-2">Konversi File</h3>
+                        <p class="text-gray-400">
+                            Ubah data JSON menjadi format lain seperti CSV, XLSX, PDF, KML, dan KMZ dengan mudah.
+                        </p>
+                    </div>
+                    
+                    <!-- Fitur 4: Text to Speech -->
+                    <div class="bg-gray-800 rounded-2xl p-6 transform hover:scale-105 transition duration-300 fade-in">
+                        <div class="text-orange-500 text-4xl mb-4">🗣️</div>
+                        <h3 class="text-xl font-bold mb-2">Teks ke Ucapan</h3>
+                        <p class="text-gray-400">
+                            Konversikan teks Anda menjadi file audio yang dapat diunduh untuk berbagai keperluan.
+                        </p>
+                    </div>
+                    
+                    <!-- Fitur 5: Google Drive Integration -->
+                    <div class="bg-gray-800 rounded-2xl p-6 transform hover:scale-105 transition duration-300 fade-in">
+                        <div class="text-yellow-500 text-4xl mb-4">☁️</div>
+                        <h3 class="text-xl font-bold mb-2">Integrasi Google Drive</h3>
+                        <p class="text-gray-400">
+                            Unggah dan kelola file secara otomatis di akun <strong>Google Drive</strong> Anda.
+                        </p>
+                    </div>
+
+                    <!-- Fitur 6: Direct Messaging & File Sharing -->
+                    <div class="bg-gray-800 rounded-2xl p-6 transform hover:scale-105 transition duration-300 fade-in">
+                        <div class="text-pink-500 text-4xl mb-4">💬</div>
+                        <h3 class="text-xl font-bold mb-2">Kirim Langsung ke Sosial</h3>
+                        <p class="text-gray-400">
+                            Langsung kirim pesan, teks, atau file yang diolah ke <strong>Telegram</strong> dan <strong>Gmail</strong>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Configuration Section -->
+        <section id="konfigurasi" class="py-16 sm:py-24 p-4 bg-gray-900">
+            <div class="container mx-auto">
+                <div class="text-center mb-12 fade-in">
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-4">Konfigurasi</h2>
+                    <p class="text-gray-400 max-w-3xl mx-auto">
+                        Ikuti langkah-langkah mudah ini untuk menyiapkan North8 Anda.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-gray-800 rounded-2xl p-6 fade-in">
+                        <h3 class="text-xl font-bold mb-2">Fungsi AI</h3>
+                        <p class="text-gray-400">
+                            Buat api key Gemini <a href="https://aistudio.google.com/app/apikey" target="_blank" class="text-blue-500 hover:underline">Di sini</a>, lalu salin dan tempel API Gemini ke North8 App.
+                        </p>
+                    </div>
+                    <div class="bg-gray-800 rounded-2xl p-6 fade-in">
+                        <h3 class="text-xl font-bold mb-2">Pesan ke Gambar AI</h3>
+                        <p class="text-gray-400">
+                            Buat api key <a href="https://stability.ai/api" target="_blank" class="text-blue-500 hover:underline">Di sini</a>, lalu salin dan tempel API ke Konfigurasi AI di North8 App.
+                        </p>
+                    </div>
+                    <div class="bg-gray-800 rounded-2xl p-6 fade-in">
+                        <h3 class="text-xl font-bold mb-2">Gmail</h3>
+                        <p class="text-gray-400">
+                            Pastikan akun Google Anda sudah terverifikasi 2 langkah, lalu cari sandi aplikasi atau klik <a href="https://myaccount.google.com/apppasswords" target="_blank" class="text-blue-500 hover:underline">Di sini</a>, buat nama aplikasi "North8", lalu salin dan tempel sandi aplikasi di North8 App.
+                        </p>
+                    </div>
+                    <div class="bg-gray-800 rounded-2xl p-6 fade-in">
+                        <h3 class="text-xl font-bold mb-2">Telegram Bot</h3>
+                        <p class="text-gray-400">
+                            Tutorial cara pembuatan bot Telegram ada <a href="https://core.telegram.org/bots/api" target="_blank" class="text-blue-500 hover:underline">Di sini</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Use Section -->
+        <section id="cara-menggunakan" class="py-16 sm:py-24 p-4">
+            <div class="container mx-auto">
+                <div class="text-center mb-12 fade-in">
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-4">Cara Menggunakan</h2>
+                    <p class="text-gray-400 max-w-3xl mx-auto">
+                        Ikuti langkah-langkah sederhana ini untuk memulai.
+                    </p>
+                </div>
+                <div class="bg-gray-800 rounded-2xl p-8 max-w-3xl mx-auto fade-in">
+                    <ul class="list-decimal list-inside space-y-4 text-gray-400">
+                        <li>Klik <strong>Logika Tertulis</strong> untuk sebuah prompt, Anda juga dapat menambahkan gambar.</li>
+                        <li>Pilih <strong>Elemen UI</strong>, misalnya <strong>Send Email</strong>. Jika sudah muncul di kanvas, klik untuk konfigurasi dan sejajarkan kode agar rapi.</li>
+                        <li><strong>Visual Node:</strong> Logika Tertulis > AI > Send Email > Display.</li>
+                        <li>Lalu klik tombol <strong>Jalankan Alur</strong>.</li>
+                    </ul>
+                </div>
+                <div style="margin-top:30px;" align="center">
+                    <a target="_blank" title="North8" href="img/north8_ss.png">
+                        <img alt="North8" src="img/north8_ss.png" width="80%">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="bg-gray-900 py-16 sm:py-24 text-center p-4">
+            <div class="container mx-auto">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Siap Mengoptimalkan Alur Kerja Anda?</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto mb-8">
+                    Bergabunglah dengan North8 dan rasakan kemudahan mengotomatiskan tugas-tugas harian Anda dengan kekuatan AI.
                 </p>
+                <a href="mailto:north8app@gmail.com" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-12 rounded-full transition duration-300 transform hover:scale-105 shadow-lg animate-pulse-slow">Hub Developer</a>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-gray-800 rounded-2xl p-6 fade-in">
-                    <h3 class="text-xl font-bold mb-2">Fungsi AI</h3>
-                    <p class="text-gray-400">
-                        Buat api key Gemini <a href="https://aistudio.google.com/app/apikey" target="_blank" class="text-blue-500 hover:underline">Di sini</a>, lalu salin dan tempel API Gemini ke North8 App.
-                    </p>
-                </div>
-                <div class="bg-gray-800 rounded-2xl p-6 fade-in">
-                    <h3 class="text-xl font-bold mb-2">Pesan ke Gambar AI</h3>
-                    <p class="text-gray-400">
-                        Buat api key <a href="https://stability.ai/api" target="_blank" class="text-blue-500 hover:underline">Di sini</a>, lalu salin dan tempel API ke Konfigurasi AI di North8 App.
-                    </p>
-                </div>
-                <div class="bg-gray-800 rounded-2xl p-6 fade-in">
-                    <h3 class="text-xl font-bold mb-2">Google Drive</h3>
-                    <p class="text-gray-400">
-                        Hubungi developer melalui <a href="#" class="text-blue-500 hover:underline">WhatsApp</a> atau <a href="mailto:developer@north8.com" class="text-blue-500 hover:underline">Email</a> agar email Anda ditambahkan ke dalam lingkungan North8 App.
-                    </p>
-                </div>
-                <div class="bg-gray-800 rounded-2xl p-6 fade-in">
-                    <h3 class="text-xl font-bold mb-2">Gmail</h3>
-                    <p class="text-gray-400">
-                        Pastikan akun Google Anda sudah terverifikasi 2 langkah, lalu cari sandi aplikasi atau klik <a href="https://myaccount.google.com/apppasswords" target="_blank" class="text-blue-500 hover:underline">Di sini</a>, buat nama aplikasi "North8", lalu salin dan tempel sandi aplikasi di North8 App.
-                    </p>
-                </div>
-                <div class="bg-gray-800 rounded-2xl p-6 fade-in">
-                    <h3 class="text-xl font-bold mb-2">Telegram Bot</h3>
-                    <p class="text-gray-400">
-                        Tutorial cara pembuatan bot Telegram ada <a href="https://core.telegram.org/bots/api" target="_blank" class="text-blue-500 hover:underline">Di sini</a>.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- How to Use Section -->
-    <section id="cara-menggunakan" class="py-16 sm:py-24 p-4">
-        <div class="container mx-auto">
-            <div class="text-center mb-12 fade-in">
-                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Cara Menggunakan</h2>
-                <p class="text-gray-400 max-w-3xl mx-auto">
-                    Ikuti langkah-langkah sederhana ini untuk memulai.
-                </p>
+        <!-- Footer -->
+        <footer class="py-8 text-center text-gray-500 text-sm">
+            <p>&copy; 2025 North8. Hak Cipta Dilindungi.</p>
+            <div class="mt-2 space-x-4">
+                <a href="privacy-policy" class="hover:underline">Kebijakan Privasi</a>
+                <a href="terms-and-conditions" class="hover:underline">Syarat dan Ketentuan</a>
             </div>
-            <div class="bg-gray-800 rounded-2xl p-8 max-w-3xl mx-auto fade-in">
-                <ul class="list-decimal list-inside space-y-4 text-gray-400">
-                    <li>Klik <strong>Logika Tertulis</strong> untuk sebuah prompt, Anda juga dapat menambahkan gambar.</li>
-                    <li>Pilih <strong>Elemen UI</strong>, misalnya <strong>Send Email</strong>. Jika sudah muncul di kanvas, klik untuk konfigurasi dan sejajarkan kode agar rapi.</li>
-                    <li><strong>Visual Node:</strong> Logika Tertulis > AI > Send Email > Display.</li>
-                    <li>Lalu klik tombol <strong>Jalankan Alur</strong>.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call to Action Section -->
-    <section class="bg-gray-900 py-16 sm:py-24 text-center p-4">
-        <div class="container mx-auto">
-            <h2 class="text-3xl sm:text-4xl font-bold mb-4">Siap Mengoptimalkan Alur Kerja Anda?</h2>
-            <p class="text-gray-400 max-w-2xl mx-auto mb-8">
-                Bergabunglah dengan North8 dan rasakan kemudahan mengotomatiskan tugas-tugas harian Anda dengan kekuatan AI.
-            </p>
-            <a href="mailto:north8app@gmail.com" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-12 rounded-full transition duration-300 transform hover:scale-105 shadow-lg animate-pulse-slow">Hub Developer</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-8 text-center text-gray-500 text-sm">
-        <p>&copy; 2025 North8. Hak Cipta Dilindungi.</p>
-        <div class="mt-2 space-x-4">
-            <a href="privacy-policy" class="hover:underline">Kebijakan Privasi</a>
-            <a href="terms-and-conditions" class="hover:underline">Syarat dan Ketentuan</a>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>
