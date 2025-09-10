@@ -13,9 +13,10 @@ North8 adalah sebuah aplikasi pintar yang dibuat untuk membantu umat manusia aga
 
 # Konfigurasi
 1. **Fungsi AI** : Buat api key gemini [Disini](https://aistudio.google.com/app/apikey), lalu salin dan tempel API Gemini ke North8 App
-2. **Google Drive** : Hubungi developer melalui [WhatsApp](https://wa.me/6285211254956) atau [Email](mailto:iyortml@gmail.com) agar email anda di tambahkan kedalam lingkungan North8 App
-3. **Gmail** : Pastikan akun google anda sudah terverifikasi 2 langkah, lalu cari sandi aplikasi atau klik [disini](https://myaccount.google.com/apppasswords) buat nama aplikasi North8 lalu salin dan tempel sandi aplikasi di North8 App
-4. **Telegram Bot** : Tutorial cara pembuatan bot telegram ada [disini](https://id-devlop.web.app/view/?q=membuat-bot-telegram-untuk-akses-token-api)
+2. **Pesan ke Gambar AI** : Buak api key [Disini](https://api.stability.ai), lalu salin dan tempel API ke Konfigurasi AI di North8 App
+3. **Google Drive** : Hubungi developer melalui [WhatsApp](https://wa.me/6285211254956) atau [Email](mailto:iyortml@gmail.com) agar email anda di tambahkan kedalam lingkungan North8 App
+4. **Gmail** : Pastikan akun google anda sudah terverifikasi 2 langkah, lalu cari sandi aplikasi atau klik [disini](https://myaccount.google.com/apppasswords) buat nama aplikasi North8 lalu salin dan tempel sandi aplikasi di North8 App
+5. **Telegram Bot** : Tutorial cara pembuatan bot telegram ada [disini](https://id-devlop.web.app/view/?q=membuat-bot-telegram-untuk-akses-token-api)
 
 # Cara menggunakan
 - Klik Logika Tertulis untuk sebuah promp, anda juga dapat menambahkan gambar
