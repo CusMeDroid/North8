@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North8 - Otomasi Cerdas Bertenaga AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117;
+            color: #f0f6fc;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        .text-gradient {
+            background-image: linear-gradient(to right, #6EE7B7, #3B82F6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .animate-pulse-slow {
+            animation: pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse-slow {
+            0%, 100% { opacity: 1; }
+            50% { opacity: .7; }
+        }
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .bouncing-arrow {
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+        /* Mobile adjustments */
+        @media (max-width: 640px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Hero Section -->
+    <header class="h-screen flex flex-col items-center justify-center text-center p-4 relative">
+        <div class="absolute inset-0 z-0 opacity-20" style="background-image: url('https://placehold.co/1920x1080/0d1117/0d1117?text=');"></div>
+        <div class="relative z-10 fade-in">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-4">
+                Automasi Cerdas, <br class="sm:hidden" /><span class="text-gradient">AI di Ujung Jari Anda.</span>
+            </h1>
+            <p class="text-base sm:text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-8">
+                North8 adalah aplikasi pintar untuk membantu Anda menghasilkan teks dengan AI dan mengirimkannya secara terjadwal atau langsung ke berbagai platform sosial.
+            </p>
+            <div class="space-y-4 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row justify-center">
+                <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg">Mulai Sekarang</a>
+                <a href="#fitur" class="bg-transparent border border-white text-white font-semibold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg">Pelajari Lebih Lanjut</a>
+            </div>
+            <div class="mt-16 text-white text-4xl bouncing-arrow">
+                &darr;
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="fitur" class="py-16 sm:py-24 p-4">
+        <div class="container mx-auto">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Fitur Utama</h2>
+                <p class="text-gray-400 max-w-3xl mx-auto">
+                    North8 menyederhanakan alur kerja Anda dengan alat-alat cerdas dan integrasi yang mulus.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Fitur 1: AI Generate Text & Image -->
+                <div class="bg-gray-800 rounded-2xl p-6 transform hover:scale-105 transition duration-300 fade-in">
+                    <div class="text-blue-500 text-4xl mb-4">🤖</div>
+                    <h3 class="text-xl font-bold mb-2">Generasi Konten AI</h3>
+                    <p class="text-gray-400">
+                        Hasilkan teks dan gambar berkualitas tinggi dalam hitungan detik menggunakan <strong>Gemini API</strong> dan <strong>Stability.ai API</strong>.
+                    </p>
+                </div>
+                
+                <!-- Fitur 2: Scheduled & Direct Posting -->
+                <div class="bg-gray-800 rounded-2xl p-6 transform hover:scale-105 transition duration-300 fade-in">
+                    <div class="text-green-500 text-4xl mb-4">⏰</div>
+                    <h3 class="text-xl font-bold mb-2">Penjadwalan Otomatis</h3>
+                    <p class="text-gray-400">
+                        Atur postingan untuk dikirim pada waktu yang tepat ke <strong>Telegram</strong> atau <strong>Gmail</strong> dengan fungsi penjadwalan.
+                    </p>
+                </div>
+                
+                <!-- Fitur 3: Data Conversion -->
+                <div class="bg-gray-800 rounded-2xl p-6 transform hover:scale-105 transition duration-300 fade-in">
+                    <div class="text-purple-500 text-4xl mb-4">🔄</div>
+                    <h3 class="text-xl font-bold mb-2">Konversi File</h3>
+                    <p class="text-gray-400">
+                        Ubah data JSON menjadi format lain seperti CSV, XLSX, PDF, KML, dan KMZ dengan mudah.
+                    </p>
+                </div>
+                
+                <!-- Fitur 4: Text to Speech -->
+                <div class="bg-gray-800 rounded-2xl p-6 transform hover:scale-105 transition duration-300 fade-in">
+                    <div class="text-orange-500 text-4xl mb-4">🗣️</div>
+                    <h3 class="text-xl font-bold mb-2">Teks ke Ucapan</h3>
+                    <p class="text-gray-400">
+                        Konversikan teks Anda menjadi file audio yang dapat diunduh untuk berbagai keperluan.
+                    </p>
+                </div>
+                
+                <!-- Fitur 5: Google Drive Integration -->
+                <div class="bg-gray-800 rounded-2xl p-6 transform hover:scale-105 transition duration-300 fade-in">
+                    <div class="text-yellow-500 text-4xl mb-4">☁️</div>
+                    <h3 class="text-xl font-bold mb-2">Integrasi Google Drive</h3>
+                    <p class="text-gray-400">
+                        Unggah dan kelola file secara otomatis di akun <strong>Google Drive</strong> Anda.
+                    </p>
+                </div>
+
+                <!-- Fitur 6: Direct Messaging & File Sharing -->
+                <div class="bg-gray-800 rounded-2xl p-6 transform hover:scale-105 transition duration-300 fade-in">
+                    <div class="text-pink-500 text-4xl mb-4">💬</div>
+                    <h3 class="text-xl font-bold mb-2">Kirim Langsung ke Sosial</h3>
+                    <p class="text-gray-400">
+                        Langsung kirim pesan, teks, atau file yang diolah ke <strong>Telegram</strong> dan <strong>Gmail</strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="bg-gray-900 py-16 sm:py-24 text-center p-4">
+        <div class="container mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">Siap Mengoptimalkan Alur Kerja Anda?</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto mb-8">
+                Bergabunglah dengan North8 dan rasakan kemudahan mengotomatiskan tugas-tugas harian Anda dengan kekuatan AI.
+            </p>
+            <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-12 rounded-full transition duration-300 transform hover:scale-105 shadow-lg animate-pulse-slow">Daftar Sekarang</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-gray-500 text-sm">
+        <p>&copy; 2025 North8. Hak Cipta Dilindungi.</p>
+        <div class="mt-2 space-x-4">
+            <a href="kebijakan-privasi.html" class="hover:underline">Kebijakan Privasi</a>
+            <a href="syarat-ketentuan.html" class="hover:underline">Syarat dan Ketentuan</a>
+        </div>
+    </footer>
+</body>
+</html>
